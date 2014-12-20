@@ -1,0 +1,124 @@
+/*==> Meine CSS */
+/*--> Tests */
+
+ko-pane tab[widget="codeList-viewbox"] {
+  
+  list-style-image: url('chrome://codeList/skin/default/locate_node_active.png');
+  
+}
+
+/*--> Tree Icons */
+#codeList treechildren::-moz-tree-image {
+  padding-right: 4px;
+}
+#codeList treechildren::-moz-tree-cell-text(selected) {
+  font-weight: bold;
+}
+#codeList treechildren::-moz-tree-image(Unknown) {
+  list-style-image: url("chrome://codeList/skin/default/node-design.png");
+}
+#codeList treechildren::-moz-tree-image(Class) {
+  list-style-image: url("chrome://codeList/skin/default/class.png");
+}
+#codeList treechildren::-moz-tree-image(Function) {
+  list-style-image: url("chrome://codeList/skin/default/function.png");
+}
+#codeList treechildren::-moz-tree-image(MethodPrivate) {
+  list-style-image: url('chrome://codeList/skin/default/private.png');
+}
+#codeList treechildren::-moz-tree-image(MethodProtected) {
+  list-style-image: url('chrome://codeList/skin/default/protected.png');
+}
+#codeList treechildren::-moz-tree-image(MethodPublic) {
+  list-style-image: url('chrome://codeList/skin/default/public.png');
+}
+#codeList treechildren::-moz-tree-image(MethodPrivateStatic) {
+  list-style-image: url('chrome://codeList/skin/default/private-static.png');
+}
+#codeList treechildren::-moz-tree-image(MethodProtectedStatic) {
+  list-style-image: url('chrome://codeList/skin/default/protected-static.png');
+}
+#codeList treechildren::-moz-tree-image(MethodPublicStatic) {
+  list-style-image: url('chrome://codeList/skin/default/public-static.png');
+}
+#codeList treechildren::-moz-tree-image(Prototype) {
+  list-style-image: url('chrome://codeList/skin/default/prototype.png');
+}
+#codeList treechildren::-moz-tree-image(PrototypeClass) {
+  list-style-image: url('chrome://codeList/skin/default/prototype-class.png');
+}
+#codeList treechildren::-moz-tree-image(jQueryExt) {
+  list-style-image: url('chrome://codeList/skin/default/jquery-ext.png');
+}
+#codeList treechildren::-moz-tree-image(Tag) {
+  list-style-image: url('chrome://famfamfamsilk/skin/icons/tag.png');
+}
+#codeList treechildren::-moz-tree-image(Style) {
+  list-style-image: url('chrome://codeList/skin/default/style.png');
+}
+#codeList treechildren::-moz-tree-image(AtRule) {
+  list-style-image: url('chrome://codeList/skin/default/at-rule.png');
+}
+#codeList treechildren::-moz-tree-image(Comment) {
+  list-style-image: url('chrome://codeList/skin/default/comment.png');
+}
+#codeList treechildren::-moz-tree-image(Comment2) {
+  list-style-image: url('chrome://codeList/skin/default/comment2.png');
+}
+
+/*--> Buttons Icons */
+.sourceClearFilter{
+  list-style-image: url('chrome://komodo/skin/images/list_item_remove.png');
+}
+.toggleSort-icon {
+  list-style-image: url('chrome://codeList/skin/default/sort_lines.gif');
+}
+.toggleSort-icon:hover {
+  list-style-image: url('chrome://codeList/skin/default/sort_alpha.gif');
+}
+.toggleSort-icon.active {
+  list-style-image: url('chrome://codeList/skin/default/sort_alpha.gif');
+  border: 1px solid #888;
+}
+.toggleSort-icon.active:hover {
+  list-style-image: url('chrome://codeList/skin/default/sort_lines.gif');
+}
+.toggleExpand-icon {
+  list-style-image: url('chrome://codeList/skin/default/collapse.png');
+}
+.toggleExpand-icon:hover {
+  list-style-image: url('chrome://codeList/skin/default/expand.png');
+}
+.toggleExpand-icon.active {
+  list-style-image: url('chrome://codeList/skin/default/expand.png');
+}
+.toggleExpand-icon.active:hover {
+  list-style-image: url('chrome://codeList/skin/default/collapse.png');
+}
+.toggleLocate-icon {
+  list-style-image: url('chrome://codeList/skin/default/locate_node.png');
+}
+.toggleLocate-icon:hover {
+  list-style-image: url('chrome://codeList/skin/default/locate_node_active.png');
+}
+.toggleLocate-icon.active {
+  list-style-image: url('chrome://codeList/skin/default/locate_node_active.png');
+}
+.toggleLocate-icon.active:hover {
+  list-style-image: url('chrome://codeList/skin/default/locate_node.png');
+}
+.toggleHTMLfilter-icon {
+  list-style-image: url('chrome://famfamfamsilk/skin/icons/page_white_code.png');
+}
+.toggleHTMLfilter-icon:hover {
+  list-style-image: url('chrome://famfamfamsilk/skin/icons/page_white_code_red.png');
+}
+.toggleHTMLfilter-icon.active {
+  list-style-image: url('chrome://famfamfamsilk/skin/icons/page_white_code_red.png');
+}
+.toggleHTMLfilter-icon.active:hover {
+  list-style-image: url('chrome://famfamfamsilk/skin/icons/page_white_code.png');
+}
+.refreshSource-icon{
+  list-style-image: url('chrome://komodo/skin/global/images/refresh.png');
+}

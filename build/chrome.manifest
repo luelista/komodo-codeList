@@ -1,0 +1,4 @@
+content xtk2 jar:chrome/xtk2.jar!/xtk2/
+content codeList jar:chrome/codeList.jar!/content/
+skin codeList classic/1.0 jar:chrome/codeList.jar!/skin/
+overlay chrome://komodo/content/komodo.xul chrome://codeList/content/overlay-ko7.xul appversion>6.99

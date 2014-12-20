@@ -1,0 +1,4 @@
+content xtk2 xtk2/
+content codeList content/
+skin codeList classic/1.0 skin/
+overlay chrome://komodo/content/komodo.xul chrome://codeList/content/overlay-ko7.xul appversion>6.99

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE overlay PUBLIC "-//MOZILLA//DTD XUL V1.0//EN" "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<?xml-stylesheet href="chrome://komodo/skin" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/global/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/scrolltabs.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/sidebar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/views.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/widgets.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/toolbar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/platform.css" type="text/css"?>
+<?xml-stylesheet href="chrome://codeList/skin/default.css" type="text/css"?>
+<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script src="chrome://xtk2/content/xtk2.js" type="application/x-javascript"/>
+  <script src="chrome://codeList/content/codeList.js" type="application/x-javascript"/>
+  <vbox flex="1" id="codeList-vbox">
+    <hbox align="center" id="codeList-tabpanel-hbox">
+      <toolbarbutton id="codeList-toggle-locate"
+                     tooltiptext="Toggle automatic location of the current line"
+                     buttonstyle="pictures"
+                     class="toggleLocate-icon"
+                     oncommand="ko.extensions.codeList.toggleLocate();"/>
+      <toolbarbutton id="codeList-toggle-expand"
+                     tooltiptext="Toggle expand/collapse setting"
+                     buttonstyle="pictures"
+                     class="toggleExpand-icon"
+                     oncommand="ko.extensions.codeList.toggleExpand();"/>
+      <toolbarbutton id="codeList-toggle-sort"
+                     tooltiptext="Toggle tree ordering"
+                     buttonstyle="pictures"
+                     class="toggleSort-icon"
+                     oncommand="ko.extensions.codeList.toggleSort();"/>
+      <toolbarbutton id="codeList-toggle-HTMLfilter"
+                     tooltiptext="Toggle HTML filter"
+                     buttonstyle="pictures"
+                     class="toggleHTMLfilter-icon"
+                     oncommand="ko.extensions.codeList.toggleHTMLfilter();"/>
+      <spacer/>
+      <textbox id="codeList-search-text"
+               value=""
+               oninput="ko.extensions.codeList.search();"
+               flex="1"
+               class="search-box"/>
+      <toolbarbutton id="codeList-filter-classes-button"
+                     tooltiptext="Remove the filter"
+                     buttonstyle="pictures"
+                     class="sourceClearFilter"
+                     oncommand="ko.extensions.codeList.removeFilter();"/>
+      <toolbarbutton id="codeList-refresh-directory-button"
+                     tooltiptext="Reload tree"
+                     buttonstyle="pictures"
+                     class="refreshSource-icon"
+                     oncommand="ko.extensions.codeList.refresh();"/>
+    </hbox>
+    <tree id="codeList"
+          flex="1"
+          hidecolumnpicker="true"
+          hideheader="true"
+          flags="dont-build-content"
+          seltype="single"
+          style="-moz-user-focus:ignore">
+      <treecols>
+        <treecol flex="1" primary="true" hideheader="true"/>
+      </treecols>
+      <treechildren tooltip="codeList-item-tooltip"
+                    onclick="ko.extensions.codeList.go(event);"/>
+    </tree>
+    <tooltip id="codeList-item-tooltip" noautohide="true" onpopupshowing="ko.extensions.codeList.nodeInfo(event);">
+      <hbox><label id="codeList-node-info" value=""></label></hbox>
+    </tooltip>
+  </vbox>
+</page>

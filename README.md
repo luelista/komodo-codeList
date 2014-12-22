@@ -1,18 +1,21 @@
 codeList
+========
 
 This is a fork of the NST (New Source Tree) extension for Komodo Edit.
 
 How to install:
-- http://home.max-weller.de/journal/2014-12-22/codelist-komodo-edit-addon/
+ * http://home.max-weller.de/journal/2014-12-22/codelist-komodo-edit-addon/
 
 Original extension:
-- at ActiveState page: http://community.activestate.com/xpi/nst-new-source-tree
-- Git repo: https://github.com/HTD/NST
+ * at ActiveState page: http://community.activestate.com/xpi/nst-new-source-tree
+ * Git repo: https://github.com/HTD/NST
 
+![img](http://home.max-weller.de/docs/page_assets/4105/drop-1419252841480-codeList.jpg)
 
------ original README follows -----
+original README follows
+-----------------------
 
-
+```
 Code Browser -like extension for Komodo Edit
 
 by Adam Łyskawa
@@ -58,3 +61,5 @@ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
 CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
+
+```
